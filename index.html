@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <meta
+      name="description"
+      content="Create and download your handwritten digital signature using a modern, responsive signature pad built by Rahul Gupta."
+    />
+    <meta name="author" content="Rahul Gupta" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="dynamic-text"></h1>
+      <p class="subtitle">Fast, clean, and easy-to-download signature pad.</p>
+      <div id="signature-pad-container">
+        <canvas id="signature-pad"></canvas>
+        <div id="button-container">
+          <button onclick="clearSignature()" class="clear-btn">Clear</button>
+          <button onclick="downloadSignature()" class="download-btn">
+            Download
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
